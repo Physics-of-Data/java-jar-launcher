@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Java JAR Launcher
+Comment=Execute Java JAR files
+Exec=HOME_PLACEHOLDER/.local/bin/java-jar-runner.sh %f
+Terminal=false
+Icon=java21-openjdk
+MimeType=application/x-java-archive;application/java-archive;application/x-jar;
+NoDisplay=true

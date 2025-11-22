@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=EJS Console
+Comment=Easy Java Simulations Console
+Exec=EJS_INSTALL_PATH/EjsConsole.sh
+Path=EJS_INSTALL_PATH
+Icon=HOME_PLACEHOLDER/.icons/EjsSLogo.png
+Terminal=false
+Categories=Development;Education;Science;
+StartupNotify=true
