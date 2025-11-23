@@ -16,11 +16,12 @@ This results in JAR applications either not launching at all, or starting and im
 
 This project provides a **generic JAR launcher** that:
 
-- ✅ Works with **any** JAR file, not just specific applications
-- ✅ Automatically changes to the JAR's directory before launching
-- ✅ Preserves relative paths within the JAR application
-- ✅ Integrates seamlessly with GNOME, Cinnamon, and other desktop environments
-- ✅ Makes JAR files double-clickable in Nemo, Nautilus, and other file managers
+- Works with **any** JAR file, not just specific applications
+- Automatically changes to the JAR's directory before launching
+- Preserves relative paths within the JAR application
+- Integrates seamlessly with GNOME, Cinnamon, and other desktop environments
+- Makes JAR files double-clickable in Nemo, Nautilus, and other file managers
+- Launches **EjsConsole.jar** by detecting its current directory 
 
 ## Project Structure
 
