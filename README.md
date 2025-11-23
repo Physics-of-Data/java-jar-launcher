@@ -1,13 +1,14 @@
 # Java JAR Launcher for Linux
 
-A generic solution for launching Java JAR files from file managers (Nemo, Nautilus, etc.) on Linux desktop environments.
+This is a generic solution for launching Java JAR files from file managers (Nemo, Nautilus, etc.) on Linux desktop environments.
 
 ## The Problem
 
 On many Linux systems, double-clicking a JAR file from a file manager doesn't work properly because:
 
-1. The system's default Java handler is often misconfigured (missing the `%f` parameter)
+1. The system's default Java handler is often incorrectly configured (missing the `%f` parameter)
 2. JAR files are launched from the wrong working directory, breaking applications that use relative paths
+3. The Java Runtime version does not match the Java application
 
 This results in JAR applications either not launching at all, or starting and immediately crashing.
 
@@ -25,10 +26,10 @@ This project provides a **generic JAR launcher** that:
 
 ```
 java-jar-launcher/
-├── java-jar-runner.sh           # Generic script that launches any JAR from its directory
+├── java-jar-runner.sh           # launches any JAR from its directory
 ├── java-jar-launcher.desktop    # MIME handler for all JAR files
 ├── ejs/                          # Optional: EJS Console specific files
-│   ├── EjsConsole.desktop       # Desktop entry for EJS Console application
+│   ├── EjsConsole.desktop       # Desktop entry EJS Console application
 │   ├── EjsSLogo.png             # EJS Console icon
 │   ├── EjsIcon.gif              # Additional EJS icons
 │   └── EjsLogo.gif
@@ -215,4 +216,4 @@ Created to solve the common problem of JAR files not launching properly from Lin
 
 ---
 
-**Now you can double-click JAR files like they're supposed to work!** 🎉
+
