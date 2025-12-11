@@ -17,7 +17,7 @@ APPS_DIR = $(HOME)/.local/share/applications
 ICONS_DIR = $(HOME)/.icons
 
 # EJS Console installation path (override with: make install-ejs EJS_PATH=/your/path)
-EJS_PATH ?= /storage/develop/opensourcephysics/EJS
+EJS_PATH ?= /storage/develop/opensourcephysics/01-ejs/EJS
 
 # Source files
 JAR_RUNNER_SCRIPT = java-jar-runner.sh
