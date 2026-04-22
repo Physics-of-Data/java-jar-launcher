@@ -36,25 +36,6 @@ INSTALLED_EJS_ICON = $(ICONS_DIR)/EjsSLogo.png
 # Default target
 all: help
 
-help:
-	@echo "Java JAR Launcher - Installation"
-	@echo "=================================="
-	@echo ""
-	@echo "Available targets:"
-	@echo "  make install        - Install generic JAR launcher (works with any JAR)"
-	@echo "  make install-ejs    - Install EJS Console launcher (requires EJS installed)"
-	@echo "  make uninstall      - Remove all installed files"
-	@echo "  make clean          - Clean temporary files"
-	@echo ""
-	@echo "Installation directories:"
-	@echo "  Scripts:       $(BIN_DIR)"
-	@echo "  Applications:  $(APPS_DIR)"
-	@echo "  Icons:         $(ICONS_DIR)"
-	@echo ""
-	@echo "Customization:"
-	@echo "  EJS_PATH       - EJS installation path (default: $(EJS_PATH))"
-	@echo "  Example: make install-ejs EJS_PATH=/opt/EJS"
-
 install:
 	@echo "Installing Java JAR Launcher..."
 	@# Create directories if they don't exist
@@ -120,3 +101,22 @@ clean:
 	@echo "Cleaning temporary files..."
 	@rm -f *~ ejs/*~
 	@echo "Done."
+
+help:
+	@echo "Java JAR Launcher - Installation"
+	@echo "=================================="
+	@echo ""
+	@echo "Available targets:"
+	@echo "  make install        - Install generic JAR launcher (works with any JAR)"
+	@echo "  make install-ejs    - Install EJS Console launcher (requires EJS installed)"
+	@echo "  make uninstall      - Remove all installed files"
+	@echo "  make clean          - Clean temporary files"
+	@echo ""
+	@echo "Installation directories:"
+	@echo "  Scripts:       $(BIN_DIR)"
+	@echo "  Applications:  $(APPS_DIR)"
+	@echo "  Icons:         $(ICONS_DIR)"
+	@echo ""
+	@echo "Customization:"
+	@echo "  EJS_PATH       - EJS installation path (default: $(EJS_PATH))"
+	@echo "  Example: make install-ejs EJS_PATH=/opt/EJS"
